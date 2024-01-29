@@ -1,1 +1,2 @@
-format g: /fs:NTFS /p:0
+format DRIVE_LETTER: /FS:filesystem /P:passes
+
