@@ -13,3 +13,6 @@ The command /P indicates the number of passes
 /P:1: Writes zeros to every sector once. This is a basic level of data wiping.
 /P:n (where n is greater than 1): Performs multiple passes, overwriting the disk sectors with different patterns each time. The more passes, the more secure the data wiping process is considered. However, it also takes longer to complete.
 For most ordinary formatting needs, you may not need to specify /P as it defaults to 0 (quick format). However, if you're formatting a drive with sensitive data and want to ensure that it's difficult to recover, specifying /P with a value greater than 0 is recommended.
+
+An example of the script being used to wipe a drive indicated as G with the NTFS filesystem would be 
+format G /FS:NTFS /P:1
